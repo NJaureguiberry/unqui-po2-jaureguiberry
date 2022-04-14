@@ -1,6 +1,6 @@
 package ar.edu.unq.po2;
 
-package ar.edu.unq.po2.tp3;
+package ar.unq.po2;
 
 public class Punto {
    private float x;

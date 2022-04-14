@@ -51,6 +51,6 @@ int contarParesDeUnNumero(int x) {
 }
 
 int numeroConMasDigitosPares(){
-	
+	//
 }
 }
