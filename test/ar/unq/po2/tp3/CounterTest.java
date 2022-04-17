@@ -41,9 +41,6 @@ class CounterTest {
 		assertEquals(counter.contarImpares(),8);
 	}
 	
-	@Test
-	void ContarParesDeUnNumero(){
-		assertEquals(counter.contarParesDeUnNumero(199292),2);
-	}
+	
 	
 	}

@@ -39,7 +39,7 @@ public int contarMultiplos(int x) {
 	   return cantidad;
 }
 
-int contarParesDeUnNumero(int x) {
+public static int contarParesDeUnNumero(int x) {
 	   int  cantPares=0;
 	   int digito;
 	   while(x>0) {
@@ -48,9 +48,5 @@ int contarParesDeUnNumero(int x) {
 		   x = x/10;
 	   }
 	   return cantPares;
-}
-
-int numeroConMasDigitosPares(){
-	//
 }
 }
