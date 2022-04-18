@@ -1,0 +1,16 @@
+String a = "abc";
+String s = a;
+String t;
+
+
+Indique que valores retornan las siguientes expresiones o, si dan error, por qué se producen:
+● s.length();   retorna 3
+● t.length();   retorna null
+● 1 + a;        retorna 1abc
+● a.toUpperCase();  return ABC
+● "Libertad".indexOf("r");  return 4   
+● "Universidad".lastIndexOf('i');  return 7
+● "Quilmes".substring(2,4);  return "ilm"
+● (a.length() + a).startsWith("a");  return False
+● s == a; return True
+● a.substring(1,3).equals("bc")  return True
