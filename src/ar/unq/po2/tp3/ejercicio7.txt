@@ -1,0 +1,5 @@
+1 ) los paquetes estan organizados en carpetas, 
+y cada clase esta adentro de la carpeta que corresponde al paquete.
+
+2) Los archivos fuentes y los compilados, se encuentran en carpetas que corresponden a los paquetes definidos en
+java, la unica diferencia es que los compilados estan como carpeta raiz es "bin".
