@@ -25,8 +25,8 @@ class PersonaTest {
 		String stringFecha2 = "12/10/1997";
 		Date fecha2 = sdf.parse(stringFecha2);
 
-		persona1 = new Persona("Nicolas", fecha1);
-		persona2 = new Persona("Agustina", fecha2);
+		persona1 = new Persona("Nicolas","Jaureguiberry", fecha1);
+		persona2 = new Persona("Agustina","Ibarra", fecha2);
 	}
 
 	@Test

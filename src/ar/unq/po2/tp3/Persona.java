@@ -7,14 +7,22 @@ import java.util.Date;
 
 public class Persona {
 	private String name;
+	private String surname;
 	private Date fechaDeNacimiento;
 	
 	
-	public Persona(String nombre, Date fechaNacimiento) {
+	public Persona(String nombre,String apellido, Date fechaNacimiento) {
 		super();
 		this.setName(nombre);
+		this.setApellido(apellido);
 		this.setFechaDeNacimiento(fechaNacimiento);
 	}
+	
+	
+	public void setApellido(String apellido) {
+		this.surname = apellido;
+	}
+	
 	
 	
 	public void setName(String name) {
@@ -27,16 +35,21 @@ public class Persona {
 	public String getName() {
 		return name;
 	}
+	
+	public String getApellido() {
+		return surname;
+	}
+	
 	public Date getFechaDeNacimiento() {
 		return fechaDeNacimiento;
 	}
 	
-	public long getEdad() {
+	public int getEdad() {
 		 LocalDate hoy = LocalDate.now();   
 		 LocalDate nacimiento = this.getFechaDeNacimiento().toInstant().
 		           atZone(ZoneId.systemDefault()).toLocalDate(); 
-		 long edad = ChronoUnit.YEARS.between(nacimiento, hoy);
-		 return edad;
+		 Long edad = ChronoUnit.YEARS.between(nacimiento, hoy);
+		 return Integer.valueOf(edad.toString());
 	}
 	
 	public boolean menorQue(Persona persona) {
