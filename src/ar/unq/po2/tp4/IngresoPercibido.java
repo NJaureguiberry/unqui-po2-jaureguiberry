@@ -11,6 +11,9 @@ public class IngresoPercibido {
     	this.setMonto(monto);
     }
 
+    
+    
+    
 	public String getMes() {
 		return mes;
 	}
@@ -34,6 +37,11 @@ public class IngresoPercibido {
 	public void setMonto(int monto) {
 		this.monto = monto;
 	}
+	
+	public int montoImponible() {
+		return this.getMonto();
+	}
+	
 	
 
     

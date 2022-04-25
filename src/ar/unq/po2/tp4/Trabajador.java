@@ -29,11 +29,20 @@ public class Trabajador {
 				   .map(IngresoPercibido -> IngresoPercibido.getMonto())
 				   .collect(Collectors.toList());
 	}
-
-
 	
+	public List<Integer> getMontosImponibles() {
+		return this.getIngresosPercibidos().stream()
+		   .map(IngresoPercibido -> IngresoPercibido.montoImponible())
+		   .collect(Collectors.toList());
+	}
 	
+	public int getMontoImponible() {
+		return this.getMontosImponibles().stream().mapToInt(Integer::intValue).sum();
+	}
 	
+	public double getImpuestoAPagar() {
+		return this.getMontoImponible()*0.02;
+	}
 	
 	
 
