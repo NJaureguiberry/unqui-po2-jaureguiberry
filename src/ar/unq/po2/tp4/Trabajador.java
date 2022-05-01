@@ -32,7 +32,7 @@ public class Trabajador {
 	
 	public List<Integer> getMontosImponibles() {
 		return this.getIngresosPercibidos().stream()
-		   .map(IngresoPercibido -> IngresoPercibido.montoImponible())
+		   .map(IngresoPercibido -> IngresoPercibido.getMontoImponible())
 		   .collect(Collectors.toList());
 	}
 	

@@ -38,7 +38,7 @@ public class IngresoPercibido {
 		this.monto = monto;
 	}
 	
-	public int getmontoImponible() {
+	public int getMontoImponible() {
 		return this.getMonto();
 	}
 	
