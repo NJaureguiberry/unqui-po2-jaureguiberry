@@ -1,0 +1,21 @@
+1- Las ventaja que brinda una interfaz en cuanto a polimorfismo, es que extiende el protocolo declarado en ésta hacia las clases que
+la implementan. En las interfaces solo se declara el nombre del método pero no el desarrollo del mismo, eso se debe hacer en la clase
+que se implementa dicha interfaz, pudiendo asi por polimorfismo dos clases distintas comportarse de distintas maneras bajo un mismo mensaje.
+
+2- Como Java no permite la herencia multiple, habrá ocaciones en las que debamos utilizar interfaces. Las subclases pueden heredar el
+protocolo de no mas de una clase abstracta, que al contrario sucede de las interfaces de las cuales si se puede implementar de mas de una a la vez.
+
+3- La ventaja que tienen las clases abstractas es que éstas poseen metodos con comportamiento definido, y métodos abstractos los cuales la subclase
+que hereda debe redefinirlo. (Antes de Java 8 las interfaces estaban compuestas en su totalidad por métodos abstractos, hasta donde averigüe,
+actualmente ésto ya no es así.) Otra ventaja es que las variables definidas se pueden modificar en la herencia a diferencia de las interfacez que
+las variables son constantes finales.
+
+
+4- Tanto interfaces como clases abstractas NO es posible crear instancias.
+
+5- No es recomendable incrementar o modificar las firmas definidas en un interface debido a que todos los metodos definidos en ésta deben ser
+definidos en la clase que la implementa. Con lo cual si se Extienden o modifican vamos a tener errores de compilación en las clases que la implementaron,
+ya sea por modificación de nombre o por falta de definición del nuevo método definido en la interfaz.
+
+6 - En lenguajes como Smalltalk no es necesario la implementación de interfaces debido a que es un lenguaje de tipado dinamico. 
+ Las clases, en Smalltalk, están organizadas jerárquicamente, con lo cual se hace uso unicamente de clases abstractas.
