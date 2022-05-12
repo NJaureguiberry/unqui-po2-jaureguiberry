@@ -10,7 +10,8 @@ public class ProductoDeCooperativa extends Producto {
 
 	@Override
 	public double getPrecio() {
-		return precio -= precio*0.1;
+		double iva = 0.1;
+		return precio -= precio*iva;
 	}
 
 }
